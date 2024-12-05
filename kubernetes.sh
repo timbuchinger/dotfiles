@@ -4,3 +4,4 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 brew install siderolabs/tap/talosctl
 brew install kubecolor
 brew install kubectx
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
