@@ -5,3 +5,4 @@ brew install siderolabs/tap/talosctl
 brew install kubecolor
 brew install kubectx
 brew install helm
+brew install derailed/k9s/k9s
