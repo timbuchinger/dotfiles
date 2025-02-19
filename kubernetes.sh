@@ -1,11 +1,19 @@
 #!/bin/bash
 
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+brew install kubectl --classic
 brew install siderolabs/tap/talosctl
 brew install kubecolor
 brew install kubectx
 brew install helm
 brew install derailed/k9s/k9s
+
 brew tap robscott/tap
 brew install robscott/tap/kube-capacity
+
+source ~/.bashrc
+
+kubectl completion bash | sudo tee /etc/bash_completion.d/kubectl > /dev/null
+
+source ~/.bashrc
 
