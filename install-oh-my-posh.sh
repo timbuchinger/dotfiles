@@ -14,6 +14,9 @@ curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrai
 unzip -o ~/Downloads/JetBrainsMono.zip -d ~/Library/Fonts
 rm ~/Downloads/JetBrainsMono.zip
 
+echo "Installing Meslo font..."
+oh-my-posh font install meslo
+
 echo "Configuring oh-my-posh..."
 # Create config directory
 mkdir -p ~/.config/oh-my-posh
