@@ -5,3 +5,5 @@ source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
 
 export TALOS_EDITOR="code -w"
+
+echo 'eval "$(gh copilot alias -- bash)"' >> ~/.bashrc
